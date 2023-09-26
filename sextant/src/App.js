@@ -1,22 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-
-function Banner(props){
-  return (
-    <div className='App-banner'>
-      <p>Welcome to, {props.name}</p>
-    </div>
-    )
-}
-
-function Card(props){
-  return(
-    <div className='Card'>
-      <header>{props.name}</header>
-      <p>network information</p>
-    </div>
-  )
-}
+import Banner from './Banner';
+import Card from './Card';
+import IP from './ReturnIP';
 
 class App extends Component {
   render() {
@@ -24,14 +10,10 @@ class App extends Component {
       <div className="App">
         <Banner name="Sextant"></Banner>
         <div className='Body'>
-          <Card name="Throughput"></Card>
-          <Card name="Ping"></Card>
-          <Card name="Devices"></Card>
-          <Card name="Devices"></Card>
-          <Card name="Devices"></Card>
-          <Card name="Devices"></Card>
-          <Card name="Devices"></Card>
-          <Card name="Devices"></Card>
+          <Card name='Throughput'></Card>
+          <Card name='IPv4 Address'>
+              <IP url ='https://api.ipify.org?format=json' />
+          </Card>
         </div>
       </div>
     )

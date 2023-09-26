@@ -1,29 +1,5 @@
-.App {
+.App, html{
   text-align: center;
   background-color: #141a27;
-}
-
-.Body {
-  display: contents;
-}
-
-.Card {
-  border-radius: 0.2cm;
-  margin: 10px;
-  padding: 2vh;
-  background-color: #252a39;
-  color: white;
-  min-width: 15vh;
-  max-width: 15vh;
-}
-
-.App-banner {
-  background-color: #191d26;
-  min-height: 5vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height:100%;
 }
