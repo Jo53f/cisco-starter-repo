@@ -10,24 +10,17 @@ class IP extends Component{
         }
     }
 
-    findIP(){
+    componentDidMount(){
         fetch(this.state.url)
             .then(response => response.json())
             .then(data => this.setState({IPAddress : data.ip}))
-
-        if (this.state.IPAddress == null) {
-            this.setState({IPAddress : "Hello"})
-        }
-        else{
-            this.setState({IPAddress : "Hello"})
-        }
     }
 
     render(){
         return(
-            <span>
+            <p>
                 {this.state.IPAddress}
-            </span>
+            </p>
         )
     }
 }

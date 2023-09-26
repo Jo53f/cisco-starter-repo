@@ -12,7 +12,7 @@ class App extends Component {
         <div className='Body'>
           <Card name='Throughput'></Card>
           <Card name='IPv4 Address'>
-              <IP url ='https://api.ipify.org?format=json' />
+              <IP url ='https://api.ipify.org?format=json'/>
           </Card>
         </div>
       </div>
