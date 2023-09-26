@@ -12,7 +12,6 @@ class Latency extends Component{
 
     }
     
-
     componentDidMount(){
         socket.addEventListener("message", (event) => {
             this.setState({laten : Date.now() - event.data})
